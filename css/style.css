@@ -1,0 +1,96 @@
+/* Define colors */
+:root {
+    --red-deep: #5a0a0c;
+    --gold-light: #f0c040;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+    transition: 0.3s ease;
+}
+.nav-bar.scrolled {
+    background-color: red;
+    transition: background-color 0.7s ease;
+}
+
+.logo {
+    text-decoration: none;
+    margin-left: 64px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    width: 350px;
+}
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-name {
+    height: 60%;
+    align-items: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+}
+.nav-name p {
+    font-size: 10px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    opacity: 0.8;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.nav-links {    
+    margin-right: 64px;
+    display: flex;
+    gap: 2.5rem;
+}
+.nav-links li {
+    list-style: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.nav-links a {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+.nav-links a:hover {
+    color: var(--gold-light);
+    transition: 0.5s;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: var(--red-deep);
+}
+
+.hero-overlay {
+    position: absolute;
+    height: 100%; width: 100%;
+    background: linear-gradient(to right, var(--red-deep) 35%, rgba(90,10,12,0.4) 70%, rgba(90,10,12,0.1) 100%);
+}
+
+.hero-img {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 55%;
+    opacity: 0.22;
+}
