@@ -11,6 +11,13 @@
 .nav-links li:nth-child(2) a {
     color: var(--gold-light);
 }
+.nav-links li:first-child {
+    border-top: rgba(255, 0, 0, 0);
+    border-bottom: rgba(255, 0, 0, 0);
+}
+.nav-links li:first-child a {
+    color: white;
+}
 /* Custom nav bar */
 .nav-bar {
     background-color: var(--red-deep);
@@ -19,20 +26,21 @@
 /* Custom hero */
 .hero {
     flex-direction: column;
+    align-items: flex-start;
 }
 
 /* Header */
-.members-header {
-    position: relative;
-    width: 100%;
-}
 
-.members-header img {
+.members-header-img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     display: block;
-    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.4;
 }
 
 .header-text {
@@ -45,15 +53,12 @@
 }
 
 .header-text h1 {
-    font-style: "be Vietnam Pro", sans-serif;
     font-size: 50px;
-    text-transform: uppercase;
     margin: 0;
 }
 
 .header-text p {
     font-size: 20px;
-    font-style: italic;
 }
 
 .members-intro {
@@ -96,7 +101,7 @@
 .title-container {
     width: 80%;
     margin: 0px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #5a0a0c;
     padding-bottom: 2px;
     text-align: center;
 }
@@ -106,31 +111,7 @@
     font-weight: bold;
     margin-bottom: 3px;
     margin-top: 10px;
-    animation: rainbow 3s infinite;
-}
-
-@keyframes rainbow {
-    0% {
-        color: red;
-    }
-    16% {
-        color: orange;
-    }
-    33% {
-        color: yellow;
-    }
-    50% {
-        color: green;
-    }
-    66% {
-        color: blue;
-    }
-    83% {
-        color: indigo;
-    }
-    100% {
-        color: violet;
-    }
+    color: #5a0a0c;
 }
 
 .classroom-image {
