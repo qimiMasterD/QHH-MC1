@@ -5,7 +5,7 @@
 }
 
 .nav-links li:first-child {
-    border-top: 2px solid var(--gold-light); 
+    border-top: 2px solid var(--gold-light);
     border-bottom: 2px solid var(--gold-light);
 }
 .nav-links li:first-child a {
@@ -22,7 +22,7 @@
 
 .hero-badge {
     width: fit-content;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     text-transform: uppercase;
     color: var(--gold-light);
     font-size: 12px;
@@ -34,7 +34,7 @@
 }
 
 .hero-school-name {
-    font-family: 'be Vietnam Pro', sans-serif;
+    font-family: "be Vietnam Pro", sans-serif;
     font-size: 11px;
     margin-top: 2.5rem;
     color: rgba(240, 192, 64, 0.8);
@@ -43,17 +43,17 @@
 }
 
 .hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 5.4rem;
     font-weight: 900;
     letter-spacing: -4px;
     color: white;
     text-transform: capitalize;
-    margin-top: 0.5rem; 
+    margin-top: 0.5rem;
 }
 
 .hero-title-sub {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 40px;
     color: rgba(240, 192, 64, 1);
     letter-spacing: 2px;
@@ -62,7 +62,7 @@
 }
 
 .hero-description {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
     margin-top: 2rem;
     line-height: 1.5;
@@ -70,11 +70,11 @@
 }
 
 /* Marquee */
-.marquee { 
+.marquee {
     margin-top: -5vh;
-    background: var(--gold-light); 
-    padding: 0.8rem 0; 
-    overflow: hidden; 
+    background: var(--gold-light);
+    padding: 0.8rem 0;
+    overflow: hidden;
     position: relative;
 }
 
@@ -84,7 +84,11 @@
     white-space: nowrap;
     animation: marquee 24s linear infinite;
 }
-@keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
 .marquee-item {
     font-family: var(--serif);
     font-size: 0.78rem;
@@ -94,7 +98,11 @@
     align-items: center;
     gap: 1.5rem;
 }
-.marquee-item::after { content: '★'; font-size: 0.5rem; font-style: normal; }
+.marquee-item::after {
+    content: "★";
+    font-size: 0.5rem;
+    font-style: normal;
+}
 
 /* Introduction */
 .intro {
@@ -114,10 +122,16 @@
 .intro-img {
     width: 50%;
 }
-.intro-img-img1, .intro-img-img2 {
+.intro-img2 {
+    width: 50%;
+    padding-left: 100px;
+}
+.intro-img-img1,
+.intro-img-img2 {
     justify-content: space-between;
     width: 85%;
     height: auto;
+    margin-left: auto;
 }
 .intro-img-img1 {
     margin-bottom: -4px;
@@ -128,7 +142,7 @@
 }
 
 .intro-divider-begin {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     text-transform: uppercase;
     align-items: center;
     color: red;
@@ -138,16 +152,17 @@
     margin-bottom: 1rem;
 }
 .intro-divider-begin::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 50px;
     height: 1px;
     background-color: red;
     margin-right: 10px;
+    margin-bottom: 3px;
 }
 .intro-divider-end {
     margin-top: 20px;
-    content: '';
+    content: "";
     display: inline-block;
     width: 50px;
     height: 1px;
@@ -164,12 +179,12 @@
 .intro-content h1 {
     margin-top: 0;
     font-size: 3.6em;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 .intro-content > span {
     font-size: 14px;
     line-height: 1.5;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     color: rgba(0, 0, 0, 0.6);
 }
 .intro-content ul {
@@ -179,7 +194,7 @@
 }
 
 .intro-block {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-size: 14px;
     color: black;
     font-weight: 600;
@@ -233,7 +248,7 @@
 }
 
 .classes-divider {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     text-transform: uppercase;
     align-items: center;
     color: var(--gold-light);
@@ -243,7 +258,7 @@
     display: flex;
 }
 .classes-divider::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 50px;
     height: 1px;
@@ -251,7 +266,7 @@
     margin-right: 10px;
 }
 .classes-title {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 2rem;
     color: white;
 }
@@ -259,7 +274,7 @@
     margin-top: 1rem;
 }
 .classes-desc {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     margin-top: 0.5rem;
@@ -280,10 +295,10 @@
     gap: 0.5rem;
 }
 .classes-card:hover {
-    background:rgba(255, 0, 0, 0.3)
+    background: rgba(255, 0, 0, 0.3);
 }
 .classes-type {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     text-transform: uppercase;
     color: var(--gold-light);
     font-size: 8px;
@@ -291,14 +306,14 @@
     font-weight: 200;
 }
 .classes-subject {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 20px;
     font-weight: 600;
     margin-top: 10px;
     color: white;
 }
 .classes-description {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-size: 12px;
     margin-top: 10px;
     line-height: 1.5;
@@ -315,4 +330,17 @@
     font-size: 12px;
     text-transform: uppercase;
     border: 0.1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* MC1 introduction */
+.mc1-intro {
+    display: flex;
+}
+
+.mc1-img {
+    width: 50%;
+}
+
+.mc1-desc {
+    width: 50%;
 }

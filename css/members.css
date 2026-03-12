@@ -5,7 +5,7 @@
 }
 
 .nav-links li:nth-child(2) {
-    border-top: 2px solid var(--gold-light); 
+    border-top: 2px solid var(--gold-light);
     border-bottom: 2px solid var(--gold-light);
 }
 .nav-links li:nth-child(2) a {
@@ -22,19 +22,20 @@
 }
 
 /* Header */
-.members-header{
+.members-header {
     position: relative;
     width: 100%;
 }
 
-.members-header img{
+.members-header img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     display: block;
+    opacity: 0.7;
 }
 
-.header-text{
+.header-text {
     position: absolute;
     top: 25%;
     left: 50%;
@@ -43,16 +44,19 @@
     text-align: center;
 }
 
-.header-text h1{
+.header-text h1 {
+    font-style: "be Vietnam Pro", sans-serif;
     font-size: 50px;
+    text-transform: uppercase;
     margin: 0;
 }
 
-.header-text p{
+.header-text p {
     font-size: 20px;
+    font-style: italic;
 }
 
-.members-intro{
+.members-intro {
     width: 70%;
     margin-top: 30px;
     padding: 30px 40px;
@@ -63,42 +67,41 @@
     color: #444;
     background: #f9f9f9;
     border-radius: 20px;
-    border:5px solid rgb(255, 255, 72)
+    border: 5px solid rgb(255, 255, 72);
 }
 
-.sticker{
+.sticker {
     position: absolute;
     width: 70px;
 }
 
-.bottom-right{
+.bottom-right {
     height: 50px;
     width: 150px;
     top: -20px;
     right: -20px;
 }
 
-.top-left{
+.top-left {
     height: 50px;
     width: 150px;
     bottom: -20px;
     left: -20px;
 }
 
-.members-intro p{
+.members-intro p {
     margin: 0;
 }
 
-.title-container{
+.title-container {
     width: 80%;
     margin: 0px;
     border-bottom: 3px solid white;
     padding-bottom: 2px;
     text-align: center;
-    
 }
 
-.title{
+.title {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 3px;
@@ -106,48 +109,62 @@
     animation: rainbow 3s infinite;
 }
 
-@keyframes rainbow{
-    0% {color: red;}
-    16% {color: orange;}
-    33% {color: yellow;}
-    50% {color: green;}
-    66% {color: blue;}
-    83% {color: indigo;}
-    100% {color: violet;}
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+    16% {
+        color: orange;
+    }
+    33% {
+        color: yellow;
+    }
+    50% {
+        color: green;
+    }
+    66% {
+        color: blue;
+    }
+    83% {
+        color: indigo;
+    }
+    100% {
+        color: violet;
+    }
 }
 
-.classroom-image{
+.classroom-image {
     position: relative;
     width: 75%;
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
-.classroom-bg{
+.classroom-bg {
     width: 100%;
     height: 600px;
     display: block;
 }
 
-.thach{
+.thach {
     position: absolute;
     top: 10%;
     left: 10%;
     width: 80px;
 }
 
-.thach img{
+.thach img {
     width: 100%;
     padding: 2px;
     object-fit: cover;
     height: 80px;
 }
 
-.thach img:hover{
+.thach img:hover {
     background-color: #fff312;
 }
 
-.members-gallery{
+.members-gallery {
     position: absolute;
     margin-top: 100px;
     top: 10%;
@@ -158,62 +175,62 @@
     gap: 17px;
 }
 
-.members-gallery img{
+.members-gallery img {
     width: 100%;
     padding: 2px;
     object-fit: cover;
     height: 80px;
 }
 
-.members-gallery img:hover{
+.members-gallery img:hover {
     background-color: #fff312;
 }
 
-.empty{
+.empty {
     width: 100%;
     height: 100%;
 }
 /** **/
-.member-card{
+.member-card {
     position: relative;
 }
 
-.member img{
+.member img {
     width: 100%;
     height: 80px;
     object-fit: cover;
     padding: 2px;
 }
 
-.member-info{
+.member-info {
     position: absolute;
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    
-    background: rgba(0,0,0,0.8);
+
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 6px 10px;
     border-radius: 6px;
-    
+
     width: 160px;
     text-align: center;
-    
+
     opacity: 0;
     pointer-events: none;
     transition: 0.3s;
 }
 
-.member-info h3{
+.member-info h3 {
     font-size: 13px;
     margin: 0;
 }
 
-.member-info p{
+.member-info p {
     font-size: 11px;
     margin: 2px 0 0 0;
 }
 
-.member-card:hover .member-info{
+.member-card:hover .member-info {
     opacity: 1;
 }
