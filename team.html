@@ -175,14 +175,16 @@
                     <button class="form-btn">Gửi tin nhắn →</button>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <span class="footer-text-left">
-                    © MC1 - The Soul Of Mathematics. Bảo lưu mọi quyền.
-                </span>
-                <span class="footer-text-right">
-                    "Hiền tài là nguyên khí quốc gia"
-                </span>
-            </div>
+            <div id="footer-placeholder"></div>
+            <script>
+                fetch("footer.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById(
+                            "footer-placeholder",
+                        ).innerHTML = data;
+                    });
+            </script>
         </div>
     </body>
 </html>
