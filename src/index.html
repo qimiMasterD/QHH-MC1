@@ -41,17 +41,19 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="../public/css/style.css" />
+        <link rel="stylesheet" href="../public/css/index.css" />
+        <!-- javascript -->
+        <script src="../public/js/script.js"></script>
     </head>
     <body>
         <!-- Navigation bar -->
         <nav class="nav-bar">
             <a class="logo" href="index.html">
-                <img src="../img/qhh_logo.png" alt="QHH Logo" />
-                <img src="../img/mc1_logo.png" alt="MC1 Logo" />
+                <img src="../public/img/qhh_logo.png" alt="QHH Logo" />
+                <img src="../public/img/mc1_logo.png" alt="MC1 Logo" />
                 <img
-                    src="../img/mc1_logo_version2.png"
+                    src="../public/img/mc1_logo_version2.png"
                     alt="MC1 Logo Version 2"
                 />
                 <div class="nav-name">
@@ -63,7 +65,7 @@
                 <li><a href="index.html">GIỚI THIỆU</a></li>
                 <li><a href="members.html">THÀNH VIÊN</a></li>
                 <li><a href="memories.html">KỶ NIỆM</a></li>
-                <li><a href="team.html">ĐỘI NGŨ</a></li>
+                <li><a href="team.html">TÁC GIẢ</a></li>
             </ul>
         </nav>
 
@@ -72,7 +74,7 @@
             <div class="hero-bg-pattern"></div>
             <div class="hero-lines"></div>
             <img
-                src="../img/hero-background.jpg"
+                src="../public/img/hero-background.jpg"
                 alt="Hero Background"
                 class="hero-img"
             />
@@ -125,12 +127,12 @@
                 <div class="intro-img">
                     <img
                         class="intro-img-img1"
-                        src="../img/intro.jpg"
+                        src="../public/img/intro.jpg"
                         alt="Introduction Image"
                     />
                     <img
                         class="intro-img-img2"
-                        src="../img/cong-quoc-hoc.jpg"
+                        src="../public/img/cong-quoc-hoc.jpg"
                         alt="Introduction Image"
                     />
                 </div>
@@ -517,29 +519,52 @@
             <div style="max-width: 1300px; margin: 0 auto; padding: 0 4rem">
                 <div class="gallery-grid">
                     <div class="gallery-item reveal">
-                        <img src="../img/trucban.jpg" alt="trucban" />
+                        <img src="../public/img/trucban.jpg" alt="trucban" />
                         <div class="gallery-caption">Trực ban lớp 12</div>
                     </div>
                     <div class="gallery-item reveal reveal-d1">
-                        <img src="../img/anhlop.jpg" alt="Sinh Nhat Mr Thach" />
+                        <img
+                            src="../public/img/anhlop.jpg"
+                            alt="Sinh Nhat Mr Thach"
+                        />
                         <div class="gallery-caption">Sinh nhật thầy Thạch</div>
                     </div>
                     <div class="gallery-item reveal reveal-d2">
-                        <img src="../img/memories/man4.jpg" alt="Thư viện" />
+                        <img
+                            src="../public/img/memories/man4.jpg"
+                            alt="Thư viện"
+                        />
                         <div class="gallery-caption">Nhân tố bí ẩn</div>
                     </div>
                     <div class="gallery-item reveal reveal-d3">
-                        <img src="../img/memories/tk107.jpg" alt="Lớp học" />
+                        <img
+                            src="../public/img/memories/tk107.jpg"
+                            alt="Lớp học"
+                        />
                         <div class="gallery-caption">
                             Có biển rồi, thiếu mỗi em
                         </div>
                     </div>
                     <div class="gallery-item reveal reveal-d4">
-                        <img src="../img/memories/trai102.jpg" alt="Lễ hội" />
+                        <img
+                            src="../public/img/memories/trai102.jpg"
+                            alt="Lễ hội"
+                        />
                         <div class="gallery-caption">Trại lớp 10</div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch("footer.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("footer-placeholder").innerHTML =
+                        data;
+                });
+        </script>
     </body>
 </html>
