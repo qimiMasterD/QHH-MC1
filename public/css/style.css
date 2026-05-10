@@ -50,6 +50,7 @@ body {
 }
 
 .logo {
+    display: flex;
     text-decoration: none;
     margin-left: 64px;
     display: flex;

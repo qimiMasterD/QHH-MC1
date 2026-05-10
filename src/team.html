@@ -40,19 +40,19 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="../public/css/style.css" />
-        <link rel="stylesheet" href="../public/css/team.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/team.css" />
         <!-- javascript -->
-        <script src="../public/js/script.js"></script>
+        <script src="./js/script.js"></script>
     </head>
     <body>
         <!-- Navigation bar -->
         <nav class="nav-bar">
             <a class="logo" href="index.html">
-                <img src="../public/img/qhh_logo.png" alt="QHH Logo" />
-                <img src="../public/img/mc1_logo.png" alt="MC1 Logo" />
+                <img src="./img/qhh_logo.png" alt="QHH Logo" />
+                <img src="./img/mc1_logo.png" alt="MC1 Logo" />
                 <img
-                    src="../public/img/mc1_logo_version2.png"
+                    src="./img/mc1_logo_version2.png"
                     alt="MC1 Logo Version 2"
                 />
                 <div class="nav-name">
@@ -81,7 +81,7 @@
           <div class="photo-wrap">
             <div class="photo-ring">
               <div class="photo-inner">
-                <img src="../public/img/minh.jpg" alt="">
+                <img src="./img/minh.jpg" alt="">
                 <div class="photo-ph">
 
                 </div>
@@ -278,17 +278,7 @@
                     <button class="form-btn">Gửi tin nhắn →</button>
                 </div>
             </div>
-            <!-- Footer -->
-            <div id="footer-placeholder"></div>
-            <script>
-                fetch("footer.html")
-                    .then((response) => response.text())
-                    .then((data) => {
-                        document.getElementById(
-                            "footer-placeholder",
-                        ).innerHTML = data;
-                    });
-            </script>
+
         </div>
     </body>
 </html>
